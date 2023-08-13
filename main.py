@@ -5,7 +5,7 @@ from PIL import Image
 # #1F6AA5 - синий(default)
 
 app = cTk.CTk()
-app.iconbitmap(r"C:\Users\Mikhael\PycharmProjects\tic-tac-toe\game\logo.ico")
+app.iconbitmap(r"C:\Users\Mikhael\PycharmProjects\tic-tac-toe\app\logo.ico")
 app.title('Tic-Tac-Toe')
 app.resizable(False, False)
 
@@ -116,7 +116,7 @@ def empty_spaces():
         return True
 
 
-reset_image = cTk.CTkImage(Image.open(r"/app/ResetBtn.png"), size=(48, 48))
+reset_image = cTk.CTkImage(Image.open(r"ResetBtn.png"), size=(48, 48))
 reset_btn = cTk.CTkButton(master=app, text="", image=reset_image, width=64, height=64, command=new_game)
 reset_btn.pack(side="top", pady=3)
 
